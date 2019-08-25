@@ -1,0 +1,30 @@
+{
+  "name": "savings-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "serve": "NODE_ENV=production node dist/server.js",
+    "start": "NODE_ENV=development node src/server.js",
+    "test": "DEBUG=server:debug NODE_ENV=test mocha --reporter spec --exit ./tests --recursive --exec node",
+    "test:watch": "DEBUG=server:debug NODE_ENV=development mocha --watch --reporter spec ./tests --recursive --exec node",
+    "dev": "DEBUG=server:debug NODE_ENV=development nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.10"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "config": "^3.2.2",
+    "debug": "^4.1.1",
+    "mocha": "^6.2.0",
+    "supertest": "^4.0.2"
+  }
+}
