@@ -1,0 +1,5 @@
+{
+  "name": "Test",
+  "database": "mongodb://localhost:27017/savings_test",
+  "port": 3100
+}
